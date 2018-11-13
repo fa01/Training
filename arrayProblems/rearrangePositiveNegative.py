@@ -1,3 +1,6 @@
+# Given an array with unsorted positive and negative values, create a pattern of positive, negative, positive, negative...
+# Extra positive or negative numbers will be thrown to the end
+
 def rearrangePostiveNegative(arr):
   positive = []
   negative = []
