@@ -1,7 +1,8 @@
 # Sort the values in a stack using another temporary stack to complete the process and return sorted stack
 
 def sortValues(arr):
-  if(len(arr) == 0):
+  if(len(arr) == 0 or len(arr) == 1):
+    print('len is 0 or 1, returning original array')
     return arr
 
   sortedStack = []
@@ -30,4 +31,10 @@ def sortValues(arr):
     print('done sorting', sortedStack)
   return sortedStack
 
-sortValues([1,3,2,5,4])
+
+# sortValues([1, 3, 2, 5, 4])
+# sortValues([])
+# sortValues([1])
+# sortValues([1, 3])
+# sortValues([1, 2, 3, 4, 5])
+sortValues([1000, 10, 100, 99, 85, 3, 95, 85, 56, 76, 89, 99])
