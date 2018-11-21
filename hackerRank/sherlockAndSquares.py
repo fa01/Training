@@ -1,4 +1,6 @@
 # Complete the squares function below.
+import math
+
 def squares(a, b):
     result = 0
     return math.floor(math.sqrt(b)) - math.ceil(math.sqrt(a)) + 1
